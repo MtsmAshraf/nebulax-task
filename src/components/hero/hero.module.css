@@ -76,7 +76,7 @@
     width: 45px;
     height: 45px;
     /* aspect-ratio: 1; */
-    padding: 12px;
+    /* padding: 8px; */
     border-radius: var(--main-border-radius);
     color: #fff;
     background-color: var(--main-color);
@@ -86,7 +86,7 @@
     cursor: pointer;
 }
 .hero .text form button svg{
-    /* font-size: 12px; */
+    font-size: 18px;
 }
 @media (max-width: 992px) {
     .hero{

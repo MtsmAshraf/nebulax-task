@@ -16,8 +16,8 @@ const Clients = () => {
                 <Image src={logo1} alt='media 24 logo'></Image>
                 <Image src={logo2} alt='westin 1 logo'></Image>
                 <Image src={logo5} alt='one line logo'></Image>
-                <Image src={logo4} alt='smart logo'></Image>
                 <Image src={logo3} alt='icom logo'></Image>
+                <Image src={logo4} alt='smart logo'></Image>
         </div>
     </section>
   )

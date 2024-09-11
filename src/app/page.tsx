@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
 import Clients from "@/components/clients/clients";
+import Products from "@/components/products/products";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Header></Header>
         <Hero></Hero>
         <Clients></Clients>
+        <Products></Products>
       </div>
     </main>
   );
