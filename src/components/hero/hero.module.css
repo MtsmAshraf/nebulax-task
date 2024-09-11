@@ -39,8 +39,85 @@
     border-radius: 50%;
     height: 100%;
 }
+.hero .imgCard .card .cardText h3{
+    margin-bottom: 5px;
+}
+.hero .imgCard .card .cardText span{
+    font-size: 14px;
+    color: var(--sub-text-color);
+}
+.hero .text{
+    padding-left: 60px;
+}
 .hero .text h1{
     font-size: 70px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+.hero .text form .searchBox{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.hero .text form{
+    box-shadow: var(--main-shadow);
+    background-color: var(--bg-color);
+    padding: 10px 10px 10px 20px;
+    width: fit-content;
+    border-radius: var(--main-border-radius);
+}
+.hero .text form input{
+    font-size: 18px;
+    flex: 1;
+}
+.hero .text form button{
+    width: 45px;
+    height: 45px;
+    /* aspect-ratio: 1; */
+    padding: 12px;
+    border-radius: var(--main-border-radius);
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hero .text form button svg{
+    /* font-size: 12px; */
+}
+@media (max-width: 992px) {
+    .hero{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .hero .imgCard .card{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero .text{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .hero form{
+        margin-right: auto;
+        margin-left: auto;
+        /* width: 100%; */
+    }
+    .hero form .searchBox{
+        /* width: 300px !important; */
+    }
+}
+@media (max-width: 600px) {
+    .hero .text h1{
+        font-size: 50px;
+    }
+    .hero .text{
+        text-align: center;
+    }
+    .hero .text form .searchBox{
+        width: 350px !important;
+    }
 }

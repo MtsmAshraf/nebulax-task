@@ -28,9 +28,8 @@ const Hero = () => {
                 <div className={styles.searchBox}>
                     <input type="search" placeholder='Tell us what you need to build...'/>
                     <button>
-                        <span>
+                        {/* search */}
                             <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
-                        </span>
                     </button>
                 </div>
             </form>
