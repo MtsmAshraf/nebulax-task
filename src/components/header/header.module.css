@@ -1,0 +1,23 @@
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo img{
+    width: 150px;
+}
+.header .btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header .btns > :first-child{
+    text-decoration: underline;
+}
+.header .btns > :last-child{
+    background-color: var(--sec-btn-bg);
+    padding: 8px 20px;
+    border-radius: 20px;
+}
