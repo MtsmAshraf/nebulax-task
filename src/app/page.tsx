@@ -6,6 +6,7 @@ import Clients from "@/components/clients/clients";
 import Products from "@/components/products/products";
 import Services from "@/components/services/services";
 import Sales from "@/components/sales/sales";
+import Contact from "@/components/contact/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Products></Products>
         <Services></Services>
         <Sales></Sales>
+        <Contact></Contact>
       </div>
     </main>
   );

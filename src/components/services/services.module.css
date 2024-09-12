@@ -24,5 +24,4 @@
     .services{
         grid-template-columns: repeat(1, minmax(120px, 1fr));
     }
-    
 }

@@ -16,8 +16,7 @@
   --bg-color: #ffffff;
   --sec-btn-bg: #f4f8fd;
   --main-border-radius: 10px;
-  --main-shadow: 0px 0px 80px -20px #777777;
-  --main-shadow: 0px 15px 84px -30px #777777;
+  --main-shadow: 0px 0px 80px -20px #cacaca;
   --placeholder-color: #ccc;
 }
 body{
@@ -38,14 +37,18 @@ ul,ol{
 img, video{
   max-width: 100%;
 }
-input{
+input,textarea{
+  font-family: "Lato", sans-serif;
   border: none;
 }
-input::placeholder{
+::placeholder{
   color: var(--placeholder-color);
+  font-family: "Lato", sans-serif;
 }
 input:focus,
-input:focus-visible{
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible{
   /* border: none; */
   outline: none;
 }
