@@ -25,6 +25,11 @@ body{
   color: var(--text-color);
   overflow-x: hidden;
 }
+@media (max-width: 600px) {
+  body{
+    width: 600px !important;
+  }
+}
 svg{
   position: relative;
 }
