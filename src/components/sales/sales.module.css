@@ -1,0 +1,45 @@
+.sales{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+.sales > div{
+    flex: 1;
+}
+.sales .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.sales .cards > :first-child{
+    transform: translateX(-60px);
+}
+.sales .cards > :last-child{
+    flex-direction: row-reverse;
+}
+.sales .cards > *::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: -1;
+}
+.sales .cards > *  *{
+    position: relative;
+}
+.sales .cards > :first-child::before{
+    transform: translate(-30%,-30%);
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+}
+.sales .cards > :last-child::before{
+    transform: translate(50%,10%);
+    right: 0;
+    top: 0;
+    background-color: var(--sec-color);
+}

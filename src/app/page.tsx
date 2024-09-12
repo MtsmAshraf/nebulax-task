@@ -5,6 +5,7 @@ import Hero from "@/components/hero/hero";
 import Clients from "@/components/clients/clients";
 import Products from "@/components/products/products";
 import Services from "@/components/services/services";
+import Sales from "@/components/sales/sales";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Clients></Clients>
         <Products></Products>
         <Services></Services>
+        <Sales></Sales>
       </div>
     </main>
   );
