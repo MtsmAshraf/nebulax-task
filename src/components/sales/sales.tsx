@@ -36,6 +36,7 @@ const Sales = () => {
                                     </span>
                                 </div>
                             </div>
+                            <span></span>
                         </SalesCard>
                     )
                 })

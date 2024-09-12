@@ -19,27 +19,38 @@
 .sales .cards > :last-child{
     flex-direction: row-reverse;
 }
-.sales .cards > *::before{
-    content: "";
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    opacity: 0.6;
-    z-index: -1;
-}
-.sales .cards > *  *{
-    position: relative;
-}
-.sales .cards > :first-child::before{
+.sales .cards > :first-child > span{
     transform: translate(-30%,-30%);
     left: 0;
     top: 0;
     background-color: var(--main-color);
 }
-.sales .cards > :last-child::before{
+.sales .cards > :last-child > span{
     transform: translate(50%,10%);
     right: 0;
     top: 0;
     background-color: var(--sec-color);
+}
+@media (max-width: 992px) {
+    .sales{
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .sales .cards > :first-child{
+        transform: translateX(0px);
+    }
+    .sales .cards > :first-child > span{
+        transform: translate(-0%,-30%);
+        left: 0;
+        top: 0;
+        background-color: var(--main-color);
+    }
+    .sales .cards > :last-child > span{
+        transform: translate(0%,10%);
+        right: 0;
+        top: 0;
+        background-color: var(--sec-color);
+    }
 }

@@ -16,7 +16,6 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    background-color: red;
 }
 .salesCard > div:first-child img{
     height: 100%;
@@ -54,4 +53,12 @@
 .salesCard > div:nth-child(2) > :last-child span{
     color: var(--sec-color);
     font-weight: 900;
+}
+.salesCard > span{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: -1;
 }
