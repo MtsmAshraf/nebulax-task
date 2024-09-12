@@ -7,10 +7,12 @@ import Products from "@/components/products/products";
 import Services from "@/components/services/services";
 import Sales from "@/components/sales/sales";
 import Contact from "@/components/contact/contact";
+import heroBg from "../public/assets/images/hero-bg.svg"
 
 export default function Home() {
   return (
     <main className={styles.page}>
+      <Image src={heroBg} alt='Hero section background shape'></Image>
       <div className="container">
         <Header></Header>
         <Hero></Hero>

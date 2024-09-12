@@ -3,6 +3,7 @@ import styles from "./hero.module.css"
 import Image from 'next/image'
 import hero from "../../public/assets/images/hero.png"
 import user1 from "../../public/assets/images/profile-1.jpeg"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 const Hero = () => {

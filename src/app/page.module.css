@@ -1,0 +1,11 @@
+.page{
+    position: relative;
+    overflow-x: hidden;
+}
+.page > img{
+    position: absolute;
+    top: -250px;
+    z-index: -1;
+    min-width: 1000px;
+    transform: rotateY(180deg);
+}

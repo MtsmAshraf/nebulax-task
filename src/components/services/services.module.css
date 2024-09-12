@@ -1,8 +1,16 @@
 .services{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
     gap: 30px;
     padding: 100px 100px;
+}
+.services .bg{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translate(-00%, -50%);
 }
 @media (max-width: 1200px) {
     .services{
