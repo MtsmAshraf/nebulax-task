@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from "./product.module.css"
 const Product = ({
-    children
+    children,
+    color
 }: 
 {
-    children: React.ReactNode
+    children: React.ReactNode,
+    color: string
 }) => {
   return (
-    <div className={styles.product}>
+    <div className={color === "main" ? styles.product + " " + styles.main : styles.product + " " + styles.sec }>
         {children}
     </div>
   )

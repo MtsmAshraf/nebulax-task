@@ -17,12 +17,14 @@
   --sec-btn-bg: #f4f8fd;
   --main-border-radius: 10px;
   --main-shadow: 0px 0px 80px -20px #777777;
-  --placeholder-color: #ccc
+  --main-shadow: 0px 15px 84px -30px #777777;
+  --placeholder-color: #ccc;
 }
 body{
   font-family: "Lato", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 svg{
   position: relative;

@@ -26,3 +26,9 @@
     justify-content: center;
     font-size: 30px;
 }
+@media (max-width: 992px) {
+    .mainButton{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

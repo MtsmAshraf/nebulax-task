@@ -1,0 +1,70 @@
+.product{
+    position: relative;
+    
+}
+.product > span{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.product.main > span{
+    background-color: var(--main-color);
+}
+.product.sec > span{
+    background-color: var(--sec-color);
+}
+.product > div {
+    background-color: red;
+    background-color: var(--bg-color);
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    padding: 100px 20px 20px 20px;
+    z-index: 4;
+    width: 230px;
+}
+.product > div > img{
+    position: absolute;
+    /* width: 90%; */
+    /* aspect-ratio: 4/3; */
+    height: 160px;
+    object-fit: contain;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: var(--main-shadow); */
+}
+.product h4{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.product > div > div{
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.product > div > div div{
+    display: flex;
+    align-items: center;
+    color: var(--sec-color);
+    font-weight: 900;
+}
+.product > div > div div p span{
+    font-weight: normal;
+}
+.product > div > div div a{
+    color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+    .product{
+        text-align: center;
+    }
+}

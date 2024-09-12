@@ -26,35 +26,41 @@ const Products = () => {
             </p>
             <MainButton />
         </MainHeading>
-        <div>
-            <Product>
-                <Image src={chair} alt="Orange Chair"></Image>
-                <h4>
-                    Minimal Chair
-                </h4>
-                <div className={styles.priceDetails}>
-                    <div className={styles.price}>
-                        <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
-                        <p>204<span>.00</span></p>
+        <div className={styles.productsCards}>
+            <Product color='sec'>
+                <span></span>
+                <div>
+                    <Image src={chair} alt="Orange Chair"></Image>
+                    <h4>
+                        Minimal Chair
+                    </h4>
+                    <div className={styles.priceDetails}>
+                        <div className={styles.price}>
+                            <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
+                            <p>204<span>.00</span></p>
+                        </div>
+                        <Link href={"/"}>
+                            <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                        </Link>
                     </div>
-                    <Link href={"/"}>
-                        <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                    </Link>
                 </div>
             </Product>
-            <Product>
-                <Image src={headset} alt="Headset"></Image>
-                <h4>
-                    Beats Headphone
-                </h4>
-                <div className={styles.priceDetails}>
-                    <div className={styles.price}>
-                        <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
-                        <p>74<span>.00</span></p>
+            <Product color='main'>
+                <span></span>
+                <div>
+                    <Image src={headset} alt="Headset"></Image>
+                    <h4>
+                        Beats Headphone
+                    </h4>
+                    <div className={styles.priceDetails}>
+                        <div className={styles.price}>
+                            <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
+                            <p>74<span>.00</span></p>
+                        </div>
+                        <Link href={"/"}>
+                            <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                        </Link>
                     </div>
-                    <Link href={"/"}>
-                        <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                    </Link>
                 </div>
             </Product>
         </div>
