@@ -2,14 +2,17 @@ import React from 'react'
 import styles from "./main-button.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 const MainButton = () => {
   return (
-    <div className={styles.MainButton}>
+    <Link href={"/"} className={styles.mainButton}>
         <span>
             MORE DETAILS
         </span>
-        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-    </div>
+        <div className={styles.btnIcon}>
+          <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+        </div>
+    </Link>
   )
 }
 
