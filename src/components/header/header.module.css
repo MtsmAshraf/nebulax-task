@@ -1,12 +1,14 @@
+.header{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
 .header > div{
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    left: 0;
-    width: 100%;
 }
 .header .logo img{
     width: 150px;
