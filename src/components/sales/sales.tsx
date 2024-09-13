@@ -17,6 +17,7 @@ const Sales = () => {
                 users.map((user) => {
                     return(
                         <SalesCard key={user.id}>
+                            
                             <div>
                                 <Image src={user.src} alt={`user ${user.id} profile picture`}></Image>
                             </div>
@@ -37,6 +38,9 @@ const Sales = () => {
                                 </div>
                             </div>
                             <span></span>
+                            <div>
+                                <Image src={user.lineSrc} alt='line'></Image>
+                            </div>
                         </SalesCard>
                     )
                 })

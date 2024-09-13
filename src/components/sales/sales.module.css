@@ -15,21 +15,33 @@
 }
 .sales .cards > :first-child{
     transform: translateX(-60px);
+    z-index: 29;
+    position: relative;
 }
 .sales .cards > :last-child{
     flex-direction: row-reverse;
+}
+
+.sales .cards > :first-child > div:last-of-type{
+    right: 0;
+}
+.sales .cards > :last-child > div:last-of-type{
+    left: -20px;
+    top: 100%;
 }
 .sales .cards > :first-child > span{
     transform: translate(-30%,-30%);
     left: 0;
     top: 0;
     background-color: var(--third-color);
+    z-index: -1;
 }
 .sales .cards > :last-child > span{
     transform: translate(50%,10%);
     right: 0;
     top: 0;
     background-color: var(--forth-color);
+    z-index: -1;
 }
 @media (max-width: 992px) {
     .sales{
