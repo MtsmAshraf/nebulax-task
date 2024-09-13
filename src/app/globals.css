@@ -89,3 +89,6 @@ button:focus-visible{
 section{
   overflow-x: hidden;
 }
+main{
+  position: relative;
+}

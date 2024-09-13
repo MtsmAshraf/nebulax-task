@@ -30,22 +30,24 @@ const Sales = () => {
                             <SalesCard key={user.id} animate={loaded}>
                                 
                                 <div>
-                                    <Image src={user.src} alt={`user ${user.id} profile picture`}></Image>
-                                </div>
-                                <div>
                                     <div>
-                                        <h4>
-                                            ${user.profit}
-                                        </h4>
-                                        <span>
-                                            <FontAwesomeIcon icon={faCaretUp}></FontAwesomeIcon>
-                                        </span>
+                                        <Image src={user.src} alt={`user ${user.id} profile picture`}></Image>
                                     </div>
                                     <div>
-                                        <p>Total Revenue</p>
-                                        <span>
-                                            +${user.revenue}
-                                        </span>
+                                        <div>
+                                            <h4>
+                                                ${user.profit}
+                                            </h4>
+                                            <span>
+                                                <FontAwesomeIcon icon={faCaretUp}></FontAwesomeIcon>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <p>Total Revenue</p>
+                                            <span>
+                                                +${user.revenue}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <span></span>

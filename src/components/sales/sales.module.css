@@ -13,10 +13,10 @@
     gap: 60px;
     align-items: center;
 }
-.sales .cards > div:first-child{
+.sales .cards > div:first-child > div{
     transform: translateX(-60px);
 }
-.sales .cards > div:last-child{
+.sales .cards > div:last-child > div{
     flex-direction: row-reverse;
 }
 .sales .cards > div:first-child > div:last-of-type{
@@ -49,7 +49,7 @@
     }
 }
 @media (max-width: 600px) {
-    .sales .cards > :first-child{
+    .sales .cards > :first-child > div{
         transform: translateX(0px);
     }
     .sales .cards > :first-child > span{
