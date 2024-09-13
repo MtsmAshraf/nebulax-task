@@ -22,7 +22,7 @@
         flex-direction: column;
         gap: 70px;
         margin-top: 100px;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
     .contact > :first-child{
         width: 70%;
