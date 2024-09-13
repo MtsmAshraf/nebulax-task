@@ -9,6 +9,17 @@
     width: 300px;
     padding: 20px;
     position: relative;
+    opacity: 0;
+    transform: translateX(-30%);
+}
+/* .salesCard.loaded{
+    animation: loadingFade2 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 forwards;
+} */
+.salesCard:nth-child(1).loaded{
+    animation: loadingFade1 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 forwards;
+}
+.salesCard:nth-child(2).loaded{
+    animation: loadingFade1 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s 1 forwards;
 }
 .salesCard > div:last-of-type{
     position: absolute;
@@ -101,4 +112,24 @@
     border-radius: 50%;
     opacity: 0.6;
     z-index: -1;
+}
+@keyframes loadingFade1{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes loadingFade2{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }

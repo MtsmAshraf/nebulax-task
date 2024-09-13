@@ -5,12 +5,37 @@
     justify-content: space-between;
     align-items: center;
 }
+.clients p{
+    animation: loadingFade1 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.6s 1 forwards;
+}
 .clients .logos{
     display: flex;
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    animation: loadingFade2 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.6s 1 forwards;
+}
+
+@keyframes loadingFade1{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes loadingFade2{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 .clients .logos img{
     width: 100px;

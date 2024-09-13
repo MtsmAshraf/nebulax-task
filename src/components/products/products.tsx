@@ -1,4 +1,5 @@
-import React from "react"
+"use client"
+import React, { useEffect, useState } from "react"
 import styles from "./products.module.css"
 import MainHeading from "../mainHeading/mainHeading"
 import MainButton from "../mainButton/mainButton"
@@ -12,10 +13,19 @@ import Link from "next/link"
 
 
 const Products = () => {
+    const [loaded, setLoaded] = useState(false)
+    useEffect(() => {
+      const productsSection: any = document.querySelector("#products");
+      window.addEventListener("scroll", () => {
+        if(window.scrollY >= productsSection.offsetTop - 700){
+            setLoaded(true)
+          }
+      })
+    }, [loaded])
   return (
-    <section className={styles.products}>
+    <section id='products' className={loaded ? styles.products + " " + styles.loaded : styles.products}>
         <div className="container">
-            <MainHeading>
+            <MainHeading animate={loaded}>
                 <span>
                     WE HELP YOU
                 </span>

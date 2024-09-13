@@ -11,6 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: translateX(30%);
+}
+.contact.loaded > div > div:last-child{
+    animation: loadingFade1 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 forwards;
 }
 .contact > div  > div:last-child img{
     height: 90%;
@@ -37,5 +42,25 @@
     }
     .contact > div  > div:last-child img{
         height: 500px !important;
+    }
+}
+@keyframes loadingFade1{
+    0%{
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes loadingFade2{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
     }
 }

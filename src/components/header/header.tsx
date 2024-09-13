@@ -1,9 +1,14 @@
+"use client"
 import React from 'react'
 import styles from "./header.module.css"
 import logo from "../../public/assets/images/logo.svg"
 import Image from 'next/image'
 import Link from 'next/link'
 const Header = () => {
+    // let [loaded, setLoaded] = useState(false)
+    // useEffect(() => {
+    //     setLoaded(true)
+    // },[loaded])
   return (
     <header className={styles.header}>
         <div className="container">

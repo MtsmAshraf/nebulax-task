@@ -1,12 +1,16 @@
+"use client"
 import React from 'react'
 import styles from "./card.module.css"
 const Card = ({
-    children
+    children,
+    animate
 }:{
-    children: React.ReactNode
+    children: React.ReactNode,
+    animate: boolean
 }) => {
+  
   return (
-    <div className={styles.card}>{children}</div>
+    <div id="card" className={animate ? styles.card + " " + styles.loaded : styles.card}>{children}</div>
   )
 }
 

@@ -3,6 +3,8 @@
 .mainHeading > span{
     color: var(--sec-color);
     font-size: 20px;
+    opacity: 0;
+    transform: translateY(30%);
 }
 .mainHeading > h2{
     font-size: 70px;
@@ -10,6 +12,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 400px;
+    opacity: 0;
+    transform: translateY(30%);
 }
 .mainHeading > p{
     font-size: 18px;
@@ -17,8 +21,45 @@
     margin-bottom: 50px;
     width: 80%;
     line-height: 1.5;
+    opacity: 0;
+    transform: translateY(30%);
 }
-
+.mainHeading > *:last-child{
+    opacity: 0;
+    transform: translateY(30%);
+}
+.mainHeading.loaded > span{
+    animation: loadingFade2 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 forwards;
+} 
+.mainHeading.loaded > h2{
+    animation: loadingFade2 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s 1 forwards;
+}
+.mainHeading.loaded > p{
+    animation: loadingFade2 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.8s 1 forwards;
+} 
+.mainHeading.loaded > *:last-child{
+    animation: loadingFade2 1s cubic-bezier(0.645, 0.045, 0.355, 1) 1.2s 1 forwards;
+}
+@keyframes loadingFade1{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes loadingFade2{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 @media (max-width: 992px) {
     .mainHeading{
         width: 100%;

@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from "./sales-card.module.css"
 const SalesCard = ({
-    children
+    children,
+    animate
 }: {
-    children: React.ReactNode
+    children: React.ReactNode,
+    animate: boolean
 }) => {
   return (
-    <div className={styles.salesCard}>
+    <div className={animate ? styles.salesCard + " " + styles.loaded : styles.salesCard}>
         {children}
     </div>
   )

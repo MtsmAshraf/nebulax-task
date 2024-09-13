@@ -2,9 +2,13 @@ import React from 'react'
 import styles from "./form.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons'
-const Form = () => {
+const Form = ({
+  animate
+}: {
+  animate: boolean
+}) => {
   return (
-    <form className={styles.form}>
+    <form className={animate ? styles.form + " " + styles.loaded : styles.form}>
         <h2>Write Us</h2>
         <div>
             <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>

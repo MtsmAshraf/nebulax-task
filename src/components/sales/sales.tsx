@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import styles from './sales.module.css'
 import MainHeading from '../mainHeading/mainHeading'
 import MainButton from '../mainButton/mainButton'
@@ -10,14 +11,23 @@ import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 
 
 const Sales = () => {
+    const [loaded, setLoaded] = useState(false)
+    useEffect(() => {
+      const salesSection: any = document.querySelector("#sales");
+      window.addEventListener("scroll", () => {
+        if(window.scrollY >= salesSection.offsetTop - 700){
+            setLoaded(true)
+          }
+      })
+    }, [loaded])
   return (
-    <section className={styles.sales}>
+    <section id='sales' className={styles.sales}>
         <div className="container">
             <div className={styles.cards}>
                 {
                     users.map((user) => {
                         return(
-                            <SalesCard key={user.id}>
+                            <SalesCard key={user.id} animate={loaded}>
                                 
                                 <div>
                                     <Image src={user.src} alt={`user ${user.id} profile picture`}></Image>
@@ -47,7 +57,7 @@ const Sales = () => {
                     })
                 }
             </div>
-            <MainHeading>
+            <MainHeading animate={loaded}>
                 <span>
                     WHAT WE DO
                 </span>

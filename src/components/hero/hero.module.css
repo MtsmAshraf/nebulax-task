@@ -17,7 +17,18 @@
 }
 .hero .imgCard{
     position: relative;
+    animation: loadingFade1 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s 1 forwards;
     text-align: center;
+}
+@keyframes loadingFade1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 .hero .imgCard .img{
 }
@@ -100,10 +111,22 @@
 .hero .text{
     padding-left: 60px;
 }
+
 .hero .text h1{
     font-size: 70px;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin-bottom: 50px;   
+    animation: loadingFade2 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s 1 forwards;
+}
+.hero .text form{
+    box-shadow: var(--main-shadow);
+    background-color: var(--bg-color);
+    padding: 10px 10px 10px 20px;
+    width: fit-content;
+    border-radius: var(--main-border-radius);
+    opacity: 0;
+    transform: translateY(30%);
+    animation: loadingFade2 1s cubic-bezier(0.645, 0.045, 0.355, 1) 1.3s 1 forwards;
 }
 .hero .text form .searchBox{
     width: 400px;
@@ -112,12 +135,16 @@
     justify-content: space-between;
     gap: 10px;
 }
-.hero .text form{
-    box-shadow: var(--main-shadow);
-    background-color: var(--bg-color);
-    padding: 10px 10px 10px 20px;
-    width: fit-content;
-    border-radius: var(--main-border-radius);
+
+@keyframes loadingFade2 {
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 .hero .text form input{
     font-size: 18px;
