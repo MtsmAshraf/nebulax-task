@@ -10,7 +10,7 @@ const Contact = () => {
             <Form></Form>
         </div>
         <div>
-            <Image src={formImg} alt='Black male with glasses smiling'></Image>
+            <Image loading='lazy' src={formImg} alt='Black male with glasses smiling'></Image>
         </div>
     </section>
   )

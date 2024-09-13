@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react"
 import styles from "./products.module.css"
-import MainHeading from '../mainHeading/mainHeading'
-import MainButton from '../mainButton/mainButton'
-import Product from '../product/product'
+import MainHeading from "../mainHeading/mainHeading"
+import MainButton from "../mainButton/mainButton"
+import Product from "../product/product"
 import chair from "../../public/assets/images/chair.png"
 import headset from "../../public/assets/images/headset.png"
-import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faDollar } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCartShopping, faDollar } from "@fortawesome/free-solid-svg-icons"
+import Link from "next/link"
 
 
 const Products = () => {
@@ -27,10 +27,10 @@ const Products = () => {
             <MainButton />
         </MainHeading>
         <div className={styles.productsCards}>
-            <Product color='sec'>
+            <Product color="sec">
                 <span></span>
                 <div>
-                    <Image src={chair} alt="Orange Chair"></Image>
+                    <Image loading="lazy" src={chair} alt="Orange Chair"></Image>
                     <h4>
                         Minimal Chair
                     </h4>
@@ -45,10 +45,10 @@ const Products = () => {
                     </div>
                 </div>
             </Product>
-            <Product color='main'>
+            <Product color="main">
                 <span></span>
                 <div>
-                    <Image src={headset} alt="Headset"></Image>
+                    <Image loading="lazy" src={headset} alt="Headset"></Image>
                     <h4>
                         Beats Headphone
                     </h4>

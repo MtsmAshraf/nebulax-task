@@ -13,8 +13,8 @@ import servicesBg from "../public/assets/images/services-bg.svg"
 export default function Home() {
   return (
     <main className={styles.page}>
-      <Image src={heroBg} alt='Hero section background shape'></Image>
-      <Image src={servicesBg} alt='Service bg'></Image>
+      <Image loading="lazy" src={heroBg} alt='Hero section background shape'></Image>
+      <Image loading="lazy" src={servicesBg} alt='Service bg'></Image>
       <div className="container">
         <Header></Header>
         <Hero></Hero>

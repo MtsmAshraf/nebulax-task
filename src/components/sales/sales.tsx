@@ -39,7 +39,7 @@ const Sales = () => {
                             </div>
                             <span></span>
                             <div>
-                                <Image src={user.lineSrc} alt='line'></Image>
+                                <Image loading='lazy' src={user.lineSrc} alt='line'></Image>
                             </div>
                         </SalesCard>
                     )
