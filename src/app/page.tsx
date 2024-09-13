@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
@@ -7,8 +6,6 @@ import Products from "@/components/products/products";
 import Services from "@/components/services/services";
 import Sales from "@/components/sales/sales";
 import Contact from "@/components/contact/contact";
-import heroBg from "../public/assets/images/hero-bg.svg"
-import servicesBg from "../public/assets/images/services-bg.svg"
 import Footer from "@/components/footer/footer";
 
 export default function Home() {
