@@ -1,4 +1,4 @@
-.clients{
+.clients > div{
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
@@ -19,7 +19,7 @@
     object-fit: contain;
 }
 @media (max-width: 992px) {
-    .clients{
+    .clients > div{
         flex-direction: column;
         gap: 40px;
     }

@@ -6,11 +6,13 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <section className={styles.contact}>
-        <div>
-            <Form></Form>
-        </div>
-        <div>
-            <Image loading='lazy' src={formImg} alt='Black male with glasses smiling'></Image>
+        <div className="container">
+          <div>
+              <Form></Form>
+          </div>
+          <div>
+              <Image loading='lazy' src={formImg} alt='Black male with glasses smiling'></Image>
+          </div>
         </div>
     </section>
   )

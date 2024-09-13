@@ -11,14 +11,16 @@ import logo5 from "../../public/assets/images/one-line.jpg"
 const Clients = () => {
   return (
     <section className={styles.clients}>
+      <div className="container">  
         <p>Companies we've helped build</p>
-        <div className={styles.logos}>
-                <Image src={logo1} alt="media 24 logo"></Image>
-                <Image src={logo2} alt="westin 1 logo"></Image>
-                <Image src={logo5} alt="one line logo"></Image>
-                <Image src={logo3} alt="icom logo"></Image>
-                <Image src={logo4} alt="smart logo"></Image>
-        </div>
+          <div className={styles.logos}>
+                  <Image src={logo1} alt="media 24 logo"></Image>
+                  <Image src={logo2} alt="westin 1 logo"></Image>
+                  <Image src={logo5} alt="one line logo"></Image>
+                  <Image src={logo3} alt="icom logo"></Image>
+                  <Image src={logo4} alt="smart logo"></Image>
+          </div>
+      </div>
     </section>
   )
 }

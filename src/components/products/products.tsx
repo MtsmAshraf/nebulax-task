@@ -14,55 +14,57 @@ import Link from "next/link"
 const Products = () => {
   return (
     <section className={styles.products}>
-        <MainHeading>
-            <span>
-                WE HELP YOU
-            </span>
-            <h2>
-                Sell Stunning Products
-            </h2>
-            <p>
-                We'll guide you through our unique 5-step brand-building framework
-            </p>
-            <MainButton />
-        </MainHeading>
-        <div className={styles.productsCards}>
-            <Product color="sec">
-                <span></span>
-                <div>
-                    <Image loading="lazy" src={chair} alt="Orange Chair"></Image>
-                    <h4>
-                        Minimal Chair
-                    </h4>
-                    <div className={styles.priceDetails}>
-                        <div className={styles.price}>
-                            <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
-                            <p>204<span>.00</span></p>
+        <div className="container">
+            <MainHeading>
+                <span>
+                    WE HELP YOU
+                </span>
+                <h2>
+                    Sell Stunning Products
+                </h2>
+                <p>
+                    We'll guide you through our unique 5-step brand-building framework
+                </p>
+                <MainButton />
+            </MainHeading>
+            <div className={styles.productsCards}>
+                <Product color="sec">
+                    <span></span>
+                    <div>
+                        <Image loading="lazy" src={chair} alt="Orange Chair"></Image>
+                        <h4>
+                            Minimal Chair
+                        </h4>
+                        <div className={styles.priceDetails}>
+                            <div className={styles.price}>
+                                <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
+                                <p>204<span>.00</span></p>
+                            </div>
+                            <Link href={"/"}>
+                                <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                            </Link>
                         </div>
-                        <Link href={"/"}>
-                            <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                        </Link>
                     </div>
-                </div>
-            </Product>
-            <Product color="main">
-                <span></span>
-                <div>
-                    <Image loading="lazy" src={headset} alt="Headset"></Image>
-                    <h4>
-                        Beats Headphone
-                    </h4>
-                    <div className={styles.priceDetails}>
-                        <div className={styles.price}>
-                            <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
-                            <p>74<span>.00</span></p>
+                </Product>
+                <Product color="main">
+                    <span></span>
+                    <div>
+                        <Image loading="lazy" src={headset} alt="Headset"></Image>
+                        <h4>
+                            Beats Headphone
+                        </h4>
+                        <div className={styles.priceDetails}>
+                            <div className={styles.price}>
+                                <FontAwesomeIcon icon={faDollar}></FontAwesomeIcon>
+                                <p>74<span>.00</span></p>
+                            </div>
+                            <Link href={"/"}>
+                                <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                            </Link>
                         </div>
-                        <Link href={"/"}>
-                            <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                        </Link>
                     </div>
-                </div>
-            </Product>
+                </Product>
+            </div>
         </div>
     </section>
   )

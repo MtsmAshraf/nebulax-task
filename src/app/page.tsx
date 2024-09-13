@@ -14,18 +14,16 @@ import Footer from "@/components/footer/footer";
 export default function Home() {
   return (
     <main className={styles.page}>
-      <Image loading="lazy" src={heroBg} alt='Hero section background shape'></Image>
-      <Image loading="lazy" src={servicesBg} alt='Service bg'></Image>
-      <div className="container">
-        <Header></Header>
-        <Hero></Hero>
-        <Clients></Clients>
-        <Products></Products>
-        <Services></Services>
-        <Sales></Sales>
-        <Contact></Contact>
-      </div>
-        <Footer></Footer>
+      {/* <Image loading="lazy" src={heroBg} alt='Hero section background shape'></Image> */}
+      {/* <Image loading="lazy" src={servicesBg} alt='Service bg'></Image> */}
+      <Header></Header>
+      <Hero></Hero>
+      <Clients></Clients>
+      <Products></Products>
+      <Services></Services>
+      <Sales></Sales>
+      <Contact></Contact>
+      <Footer></Footer>
     </main>
   );
 }
