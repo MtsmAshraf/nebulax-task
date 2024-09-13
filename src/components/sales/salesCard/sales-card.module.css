@@ -11,16 +11,46 @@
     position: relative;
 }
 .salesCard > div:first-child{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    padding: 10px;
+    background-color: var(--sec-btn-bg);
+}
+.salesCard > div:first-child::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    /* background-image: linear-gradient(to bottom, var(--main-color) , var(--main-color)); */
+    z-index: 1;
+    border: 2px solid var(--main-color);
+}
+.salesCard > div:first-child::after{
+    content: "";
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    /* border-radius: 50%; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    background-color: var(--sec-btn-bg);
+    z-index: 1;
 }
 .salesCard > div:first-child img{
     height: 100%;
     aspect-ratio: 4/3;
     object-fit: contain;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
 }
 .salesCard > div:nth-child(2) > :first-child{
     display: flex;
