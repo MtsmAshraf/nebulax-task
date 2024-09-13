@@ -11,7 +11,6 @@ const Contact = () => {
     window.addEventListener("scroll", () => {
       if(window.scrollY >= contactSection.offsetTop - 700){
         setLoaded(true)
-        console.log("CONTAC LOAD")
       }
     })
   }, [loaded])
