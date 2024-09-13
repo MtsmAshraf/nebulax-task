@@ -1,7 +1,7 @@
 .card{
     background-color: var(--bg-color);
     box-shadow: var(--main-shadow);
-    height: fit-content;
+    height: 350px;
     padding: 20px;
     border-radius: var(--main-border-radius);
 }

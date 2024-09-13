@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-top: 100px;
+    background-position: center;
 }
 .hero > div{
     display: flex;
