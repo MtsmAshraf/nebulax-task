@@ -1,0 +1,10 @@
+.footer{
+    background-color: #181818;
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+}
+.footer a{
+    color: var(--sec-color);
+    text-decoration: underline;
+}

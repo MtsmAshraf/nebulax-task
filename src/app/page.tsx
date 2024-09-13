@@ -9,6 +9,7 @@ import Sales from "@/components/sales/sales";
 import Contact from "@/components/contact/contact";
 import heroBg from "../public/assets/images/hero-bg.svg"
 import servicesBg from "../public/assets/images/services-bg.svg"
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Sales></Sales>
         <Contact></Contact>
       </div>
+        <Footer></Footer>
     </main>
   );
 }

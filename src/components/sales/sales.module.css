@@ -13,30 +13,29 @@
     gap: 60px;
     align-items: center;
 }
-.sales .cards > :first-child{
+.sales .cards > div:first-child{
     transform: translateX(-60px);
-    z-index: 29;
-    position: relative;
 }
-.sales .cards > :last-child{
+.sales .cards > div:last-child{
     flex-direction: row-reverse;
 }
-
-.sales .cards > :first-child > div:last-of-type{
+.sales .cards > div:first-child > div:last-of-type{
     right: 0;
 }
-.sales .cards > :last-child > div:last-of-type{
+.sales .cards > div:last-child > div:last-of-type{
     left: -20px;
     top: 100%;
 }
-.sales .cards > :first-child > span{
+.sales .cards > div:first-child > span{
     transform: translate(-30%,-30%);
     left: 0;
     top: 0;
     background-color: var(--third-color);
     z-index: -1;
+    width: 160px;
+    height: 160px;
 }
-.sales .cards > :last-child > span{
+.sales .cards > div:last-child > span{
     transform: translate(50%,10%);
     right: 0;
     top: 0;
