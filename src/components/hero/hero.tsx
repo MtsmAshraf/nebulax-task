@@ -15,6 +15,7 @@ const Hero = () => {
             </div>
             <div className={styles.card}>
                 <div className={styles.cardImg}>
+                    <span></span>
                     <Image src={user1} alt='Black male smiling user image' loading='lazy'></Image>
                 </div>
                 <div className={styles.cardText}>

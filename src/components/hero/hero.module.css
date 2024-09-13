@@ -38,8 +38,7 @@
     overflow: hidden;
     position: relative;
 }
-.hero .imgCard .card .cardImg::before{
-    content: "";
+.hero .imgCard .card .cardImg > span{
     position: absolute;
     width: calc(100% - 20px);
     height: calc(100% - 20px);
@@ -50,6 +49,20 @@
     /* border: 1px solid red; */
     background-image: linear-gradient(to bottom, red , var(--main-color));
     z-index: 1;
+}
+.hero .imgCard .card .cardImg::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+    /* background-image: linear-gradient(to bottom, red , var(--main-color)); */
+    z-index: 2;
+    background-color: var(--sec-btn-bg);
 }
 .hero .imgCard .card .cardImg::after{
     content: "";
@@ -62,12 +75,12 @@
     transform: translate(-100%, -50%);
     background-color: var(--sec-btn-bg);
     /* background-color: red; */
-    z-index: 1;
+    z-index: 3;
 }
 .hero .imgCard .card .cardImg img{
     border-radius: 50%;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
     position: relative;
 }
 .hero .imgCard .card .cardText h3{
